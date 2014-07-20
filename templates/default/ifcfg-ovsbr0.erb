@@ -1,0 +1,9 @@
+DEVICE="<%= node[:bridger][:name] %>"
+ONBOOT=yes
+DEVICETYPE=ovs
+TYPE=OVSBridge
+BOOTPROTO=static
+IPADDR="<%= node[:bridger][:ipaddress] %>"
+NETMASK="<%= node[:bridger][:netmask] %>"
+GATEWAY="<%= node[:bridger][:gateway] %>"
+HOTPLUG=no
